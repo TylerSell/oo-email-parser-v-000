@@ -14,7 +14,7 @@ class EmailParser
   end
   
   def parse
-    
+    @list.split.collect 
   end
 
   
