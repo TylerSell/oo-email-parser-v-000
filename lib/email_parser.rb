@@ -10,10 +10,10 @@ class EmailParser
   @@all = []
   
   def initialize(list)
-    parse(list)
+    @list = list 
   end
   
-  def parse(list)
+  def parse
     e = list.split(", " ||" ")
       e.each do |address|
       @@all << address
